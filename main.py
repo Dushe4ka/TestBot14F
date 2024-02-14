@@ -21,15 +21,6 @@ def start(message):
 def mess(message):
 	get_message_bot = message.text.strip().lower()
 
-	# if get_message_bot == 'Первая задача(легко)':
-	# 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-	# 	btn1 = types.KeyboardButton('Первая задача(легко)')
-	# 	btn2 = types.KeyboardButton('Вторая задача(посложнее)')
-	# 	btn3 = types.KeyboardButton('Третья задача(среднячок)')
-	# 	btn4 = types.KeyboardButton('Четвертая задача(Тяжко)')
-	# 	btn5 = types.KeyboardButton('Пятая задача(Хард)')
-	# 	markup.add(btn1, btn2, btn3, btn4, btn5)
-
 	if get_message_bot == "1":
 		markup = types.InlineKeyboardMarkup()
 		markup.add(types.InlineKeyboardButton("Посмотреть первую задачу", url="https://avatars.mds.yandex.net/i?id=1b7debcd0c02de691051c8ef43f57f301379f1e0-8699590-images-thumbs&n=13"))
